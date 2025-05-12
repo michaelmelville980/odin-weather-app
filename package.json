@@ -1,0 +1,40 @@
+{
+  "name": "<project-name-here>",
+  "version": "0.1.0",
+  "description": "<your-description>",
+  "author": "<your-name>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelmelville980/template_repository"
+  },
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "build": "npm run build:prod",
+    "start": "npm run build:dev && webpack serve --config webpack.dev.js --open",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,html,md,json}\""
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1",
+    "webpack-merge": "^6.0.1"
+  }
+}
