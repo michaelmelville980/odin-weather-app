@@ -1,12 +1,12 @@
 {
-  "name": "<project-name-here>",
-  "version": "0.1.0",
-  "description": "<your-description>",
-  "author": "<your-name>",
+  "name": "Odin-Weather-App",
+  "version": "1.0.0",
+  "description": "Finds weather by location",
+  "author": "Michael Melville",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelmelville980/template_repository"
+    "url": "https://github.com/michaelmelville980/odin-weather-app"
   },
   "main": "index.js",
   "scripts": {
