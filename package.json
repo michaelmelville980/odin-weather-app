@@ -4,6 +4,7 @@
   "description": "Finds weather by location",
   "author": "Michael Melville",
   "license": "ISC",
+  "homepage": "https://michaelmelville980.github.io/odin-weather-app",
   "repository": {
     "type": "git",
     "url": "https://github.com/michaelmelville980/odin-weather-app"
